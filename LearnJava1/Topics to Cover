@@ -1,0 +1,41 @@
+// Desired functionality showcase
+    // Variables and Operators
+        // Arrays vs Lists
+    // Classes
+        // Members
+        // Constructors
+        // Access Modifiers
+    // Control Statements
+        // If/Else, Switch, For, For Each, While, Break/Continue
+    // Inheritance and Composition
+        // Extends, Implements, interface
+    // Generics
+        // Class generics
+        // Method generics
+        // Bounded Types
+        // Wildcards
+    // Exceptions
+        // Try, catch , finally
+        // Checked and unchecked
+    // Collections
+        // List, Map, Set, Queue
+        // Other kinds of these collections (e.g. TreeMap, etc)
+        // Combining Collections
+    // Enumerations
+        // Basic example
+        // Enums are classes
+        // Iterate
+    // IO
+        // Read a file
+        // Write a file
+        // Implement a stream
+        // Move, delete, copy, etc
+    // Annotations
+        // Basic example (deprecated, override)
+        // Reflection
+        // Custom annotation
+    // Threading
+        // Create a Thread
+        // Creating a Runnable
+        // Executors
+        // Implement synchronization
