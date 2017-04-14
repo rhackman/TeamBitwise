@@ -6,8 +6,11 @@ package com.learning;
 public enum ActivityType
 {
     UNKNOWN,
-    EXIT,
     BITWISE_AND,
-    BITWISE_OR,
-    ANIMALRACE
+    ANIMALRACE,
+    GOJOGGING,
+    TEMPERATURECONVERT,
+    GETALLACTIVITIES,
+    TICTACTOE,
+    EXIT
 }
