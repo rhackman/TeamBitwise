@@ -12,5 +12,6 @@ public enum ActivityType
     TEMPERATURECONVERT,
     GETALLACTIVITIES,
     TICTACTOE,
+    READALPHABETFILE,
     EXIT
 }

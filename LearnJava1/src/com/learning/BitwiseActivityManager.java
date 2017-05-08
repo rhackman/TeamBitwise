@@ -47,6 +47,10 @@ public class BitwiseActivityManager
                     IActivity TicTacToeActivity = new TicTacToeActivity();
                     TicTacToeActivity.run();
                     break;
+                case READALPHABETFILE:
+                    IActivity ReadAlphabetActivity = new ReadAlphabetFileActivity();
+                    ReadAlphabetActivity.run();
+                    break;
                 case UNKNOWN:
                     System.out.println(unknownActivity);
                     break;
