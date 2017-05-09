@@ -1,6 +1,9 @@
 package com.learning;
 
 import com.learning.activities.*;
+import com.learning.activities.ReadAlphabetFile.*;
+import com.learning.activities.LambdaExpressionDemo.*;
+
 import java.util.ArrayList;
 import java.util.EnumSet;
 import java.util.List;
@@ -54,6 +57,10 @@ public class BitwiseActivityManager
                 case READALPHABETFILETRYWITHRESOURCES:
                     IActivity ReadAlphabetTryWithResourcesActivity = new ReadAlphabetFileTryWithResourcesActivity();
                     ReadAlphabetTryWithResourcesActivity.run();
+                    break;
+                case LAMBDAEXPRESSIONDEMO:
+                    IActivity LambdaExpressionDemoActivity = new LambdaExpressionActivity();
+                    LambdaExpressionDemoActivity.run();
                     break;
                 case UNKNOWN:
                     System.out.println(unknownActivity);

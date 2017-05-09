@@ -1,4 +1,4 @@
-package com.learning.activities;
+package com.learning.activities.ReadAlphabetFile;
 
 import com.learning.IActivity;
 
@@ -32,7 +32,7 @@ public class ReadAlphabetFileActivity implements IActivity {
 
     private void ReadAlphabetFile() throws IOException
     {
-        BufferedReader buffer = new BufferedReader(new FileReader("LearnJava1\\src\\com\\learning\\alphabet.txt"));
+        BufferedReader buffer = new BufferedReader(new FileReader("LearnJava1\\src\\com\\learning\\activities\\ReadAlphabetFile\\alphabet.txt"));
         try
         {
             String bufferData;
