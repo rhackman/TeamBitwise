@@ -54,6 +54,10 @@ public class BitwiseActivityManager
                     IActivity ReadAlphabetActivity = new ReadAlphabetFileActivity();
                     ReadAlphabetActivity.run();
                     break;
+                case READALPHABETFILEWITHNIO:
+                    IActivity ReadAlphabetWithNIOActivity = new ReadAlphabetFileWithNIOActivity();
+                    ReadAlphabetWithNIOActivity.run();
+                    break;
                 case READALPHABETFILETRYWITHRESOURCES:
                     IActivity ReadAlphabetTryWithResourcesActivity = new ReadAlphabetFileTryWithResourcesActivity();
                     ReadAlphabetTryWithResourcesActivity.run();
