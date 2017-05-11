@@ -1,6 +1,7 @@
 package com.learning;
 
 import com.learning.activities.*;
+import com.learning.activities.AnimalRace.AnimalRaceActivity;
 import com.learning.activities.ReadAlphabetFile.*;
 import com.learning.activities.LambdaExpressionDemo.*;
 
@@ -28,7 +29,9 @@ public class BitwiseActivityManager
             switch (nextActivity)
             {
                 case ANIMALRACE:
-                    System.out.println(noActivityYet);
+                    IActivity animalRace = new AnimalRaceActivity();
+                    animalRace.run();
+//                    System.out.println(noActivityYet);
                     break;
                 case BITWISE_AND:
                     IActivity bitwiseAnd = new BitwiseAndActivity();
@@ -65,6 +68,10 @@ public class BitwiseActivityManager
                 case LAMBDAEXPRESSIONDEMO:
                     IActivity LambdaExpressionDemoActivity = new LambdaExpressionActivity();
                     LambdaExpressionDemoActivity.run();
+                    break;
+                case GETORGANIZED:
+                    IActivity GetOrganizedActivity = new GetOrganizedActivity();
+                    GetOrganizedActivity.run();
                     break;
                 case UNKNOWN:
                     System.out.println(unknownActivity);
