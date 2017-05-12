@@ -31,7 +31,6 @@ public class BitwiseActivityManager
                 case ANIMALRACE:
                     IActivity animalRace = new AnimalRaceActivity();
                     animalRace.run();
-//                    System.out.println(noActivityYet);
                     break;
                 case BITWISE_AND:
                     IActivity bitwiseAnd = new BitwiseAndActivity();
