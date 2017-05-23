@@ -1,4 +1,4 @@
-package com.learning.activities.LambdaExpressionDemo;
+package com.frontlineed.teambitwise.activities.activitymodules.LambdaExpressionDemo;
 
 import java.util.ArrayList;
 import java.util.Collection;

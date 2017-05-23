@@ -1,7 +1,7 @@
-package com.learning.activities;
+package com.frontlineed.teambitwise.activities.activitymodules.GetOrganized;
 
-import com.learning.IActivity;
-import com.learning.QuestionAndAnswer;
+import com.frontlineed.teambitwise.activities.IActivity;
+import com.frontlineed.teambitwise.activities.QuestionAndAnswer;
 
 import java.util.ArrayList;
 import java.util.List;

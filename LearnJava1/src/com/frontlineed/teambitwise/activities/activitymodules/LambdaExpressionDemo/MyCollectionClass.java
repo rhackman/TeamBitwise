@@ -1,4 +1,4 @@
-package com.learning.activities.LambdaExpressionDemo;
+package com.frontlineed.teambitwise.activities.activitymodules.LambdaExpressionDemo;
 
 /**
  * Created by rconroy on 5/9/2017.
