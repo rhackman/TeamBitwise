@@ -21,21 +21,61 @@
         // List, Map, Set, Queue
         // Other kinds of these collections (e.g. TreeMap, etc)
         // Combining Collections
+        // (Java 8) forEach(), removeIf(), replaceAll(), sort(),
+        // Map.putIfAbsent(), Map.computeIfPresent(), Map.merge, etc
+    // Comparator
+        // Comparator.comparing(lambda/method reference)
+        // .thenComparing(lambda/method reference)
+        // Comparator.naturalOrder()
+        // Comparator.nullsFirst(), Comparator.nullsLast()
     // Enumerations
         // Basic example
         // Enums are classes
         // Iterate
     // IO
         // Read a file
+        // Try with resources
         // Write a file
-        // Implement a stream
-        // Move, delete, copy, etc
+        // Implement a stream (e.g. reader.lines() )
+        // Path, Move, delete, copy, etc
+        // Open a file using Path (not BufferedReader), try with resources and streams (Files.lines())
+        // Files.list, Files.walk
     // Annotations
         // Basic example (deprecated, override)
         // Reflection
         // Custom annotation
+        // Repeatable annotations (Java 8)
+        // Type annotations (e.g. @NotNull)
     // Threading
         // Create a Thread
         // Creating a Runnable
         // Executors
         // Implement synchronization
+    // Lambda Expressions (Java 8)
+        // Functional Interfaces
+        // Method References
+    // Streams (Java 8)
+        // Map, reduce, filter
+        // Map vs FlatMap
+        // Intermediary vs Terminal Operations
+        // Optionals
+        // Collectors
+        // parallelStream()?
+        // spliterator()?
+    // Date and Time API (Java 8)
+        // Date, Instant
+        // LocalDate, LocalTime
+        // Duration, Period
+        // Time Zones
+        // Interoperability/Conversion between old and new date APIs
+    // Strings
+        // Streams with strings (e.g. s.chars() )
+        // StringJoiner (or String.join) vs StringBuilder/append vs "+"
+    // Numbers
+        // sum, max min methods
+        // wrapper classes (e.g. Long vs long)
+    // Java FX 8
+        // Simple Hello World (Stage, Scene, Label)
+    // Nashorn - JavaScript Engine
+        // jjs - Nashorn REPL (Read, Eval, Print, Loop)
+        // Writing and launching JavaFX
