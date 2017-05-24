@@ -9,6 +9,10 @@ import com.frontlineed.teambitwise.activities.activitymodules.ReadAlphabetFile.R
 import com.frontlineed.teambitwise.activities.activitymodules.ReadAlphabetFile.ReadAlphabetFileTryWithResourcesActivity;
 import com.frontlineed.teambitwise.activities.activitymodules.ReadAlphabetFile.ReadAlphabetFileWithNIOActivity;
 import com.frontlineed.teambitwise.activities.activitymodules.TemperatureConvert.TemperatureConvertActivity;
+import com.frontlineed.teambitwise.activities.activitymodules.ThreadingDemo.ConcurrencyFixActivity;
+import com.frontlineed.teambitwise.activities.activitymodules.ThreadingDemo.ConcurrencyIssueActivity;
+import com.frontlineed.teambitwise.activities.activitymodules.ThreadingDemo.DirectThreadingActivity;
+import com.frontlineed.teambitwise.activities.activitymodules.ThreadingDemo.ThreadingWithThreadPoolActivity;
 import com.frontlineed.teambitwise.activities.activitymodules.TicTacToe.TicTacToeActivity;
 import com.frontlineed.teambitwise.activities.activitymodules.AnimalRace.AnimalRaceActivity;
 
@@ -79,6 +83,22 @@ public class BitwiseActivityManager
                 case GETORGANIZED:
                     IActivity GetOrganizedActivity = new GetOrganizedActivity();
                     GetOrganizedActivity.run();
+                    break;
+                case DIRECTTHREADING:
+                    IActivity DirectThreadingActivity = new DirectThreadingActivity();
+                    DirectThreadingActivity.run();
+                    break;
+                case THREADINGWITHTHREADPOOL:
+                    IActivity ThreadingWithThreadPoolActivity = new ThreadingWithThreadPoolActivity();
+                    ThreadingWithThreadPoolActivity.run();
+                    break;
+                case CONCURRENCYISSUE:
+                    IActivity ConcurrencyIssueActivity = new ConcurrencyIssueActivity();
+                    ConcurrencyIssueActivity.run();
+                    break;
+                case CONCURRENCYFIX:
+                    IActivity ConcurrencyFixActivity = new ConcurrencyFixActivity();
+                    ConcurrencyFixActivity.run();
                     break;
                 case UNKNOWN:
                     System.out.println(unknownActivity);
