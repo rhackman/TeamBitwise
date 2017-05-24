@@ -1,6 +1,6 @@
-package com.learning.activities.ReadAlphabetFile;
+package com.frontlineed.teambitwise.activities.activitymodules.ReadAlphabetFile;
 
-import com.learning.IActivity;
+import com.frontlineed.teambitwise.activities.IActivity;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -33,7 +33,7 @@ public class ReadAlphabetFileTryWithResourcesActivity implements IActivity {
     private void ReadAlphabetFileTryWithResources() throws IOException
     {
         //Notice that the BufferedReader instance creation is INSIDE the parenthesis of the try declaration
-        try (BufferedReader buffer = new BufferedReader(new FileReader("LearnJava1\\src\\com\\learning\\activities\\ReadAlphabetFile\\alphabet.txt")))
+        try (BufferedReader buffer = new BufferedReader(new FileReader(AlphabetFileConstants.getAlphabetFilePath())))
         {
             //Now the buffer variable is accessable going forward
             //***NO NEED FOR A FINALLY BLOCK WITH A CALL TO close() METHOD

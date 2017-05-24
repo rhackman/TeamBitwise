@@ -1,6 +1,6 @@
-package com.learning.activities.LambdaExpressionDemo;
+package com.frontlineed.teambitwise.activities.activitymodules.LambdaExpressionDemo;
 
-import com.learning.IActivity;
+import com.frontlineed.teambitwise.activities.IActivity;
 import java.util.ArrayList;
 import java.util.Collection;
 
