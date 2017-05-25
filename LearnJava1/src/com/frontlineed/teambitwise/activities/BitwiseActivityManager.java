@@ -1,5 +1,6 @@
 package com.frontlineed.teambitwise.activities;
 
+import com.frontlineed.teambitwise.activities.activitymodules.AnnotationDemo.CustomAnnotationDemo;
 import com.frontlineed.teambitwise.activities.activitymodules.BitwiseAnd.BitwiseAndActivity;
 import com.frontlineed.teambitwise.activities.activitymodules.GetAllActivities.GetAllActivitiesActivity;
 import com.frontlineed.teambitwise.activities.activitymodules.GetOrganized.GetOrganizedActivity;
@@ -99,6 +100,10 @@ public class BitwiseActivityManager
                 case CONCURRENCYFIX:
                     IActivity ConcurrencyFixActivity = new ConcurrencyFixActivity();
                     ConcurrencyFixActivity.run();
+                    break;
+                case CUSTOMANNOTATIONDEMO:
+                    IActivity CustomAnnotationDemoActivity = new CustomAnnotationDemo();
+                    CustomAnnotationDemoActivity.run();
                     break;
                 case UNKNOWN:
                     System.out.println(unknownActivity);
