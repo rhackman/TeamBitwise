@@ -2,9 +2,11 @@ package com.frontlineed.teambitwise.activities;
 
 import com.frontlineed.teambitwise.activities.activitymodules.AnnotationDemo.CustomAnnotationDemo;
 import com.frontlineed.teambitwise.activities.activitymodules.BitwiseAnd.BitwiseAndActivity;
+import com.frontlineed.teambitwise.activities.activitymodules.DefaultInterfaceDemo.DefaultInterfaceActivity;
 import com.frontlineed.teambitwise.activities.activitymodules.GetAllActivities.GetAllActivitiesActivity;
 import com.frontlineed.teambitwise.activities.activitymodules.GetOrganized.GetOrganizedActivity;
 import com.frontlineed.teambitwise.activities.activitymodules.GoJogging.GoJoggingActivity;
+import com.frontlineed.teambitwise.activities.activitymodules.Java8StreamDemo.Java8StreamDemo;
 import com.frontlineed.teambitwise.activities.activitymodules.LambdaExpressionDemo.LambdaExpressionActivity;
 import com.frontlineed.teambitwise.activities.activitymodules.ReadAlphabetFile.ReadAlphabetFileActivity;
 import com.frontlineed.teambitwise.activities.activitymodules.ReadAlphabetFile.ReadAlphabetFileTryWithResourcesActivity;
@@ -104,6 +106,14 @@ public class BitwiseActivityManager
                 case CUSTOMANNOTATIONDEMO:
                     IActivity CustomAnnotationDemoActivity = new CustomAnnotationDemo();
                     CustomAnnotationDemoActivity.run();
+                    break;
+                case DEFAULTINTERFACEDEMO:
+                    IActivity DefaultInterfaceActivity = new DefaultInterfaceActivity();
+                    DefaultInterfaceActivity.run();
+                    break;
+                case JAVA8STREAMDEMO:
+                    IActivity Java8StreamDemo = new Java8StreamDemo();
+                    Java8StreamDemo.run();
                     break;
                 case UNKNOWN:
                     System.out.println(unknownActivity);
