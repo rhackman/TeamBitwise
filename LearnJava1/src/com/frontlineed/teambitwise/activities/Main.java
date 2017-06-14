@@ -6,6 +6,5 @@ public class Main
     {
         BitwiseActivityManager bam = new BitwiseActivityManager();
         bam.StartProgram();
-        int test = 0;
     }
 }
