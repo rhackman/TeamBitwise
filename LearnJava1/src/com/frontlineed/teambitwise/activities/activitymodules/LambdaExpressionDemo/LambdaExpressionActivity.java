@@ -2,7 +2,10 @@ package com.frontlineed.teambitwise.activities.activitymodules.LambdaExpressionD
 
 import com.frontlineed.teambitwise.activities.IActivity;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collection;
+import java.util.List;
+import java.util.function.Consumer;
 
 /**
  * Created by rconroy on 5/9/2017.
@@ -31,5 +34,21 @@ public class LambdaExpressionActivity implements IActivity {
         System.out.println("Demonstration of removeIf with lambda expression to remove all instances where the key is 'Test'");
         theCollection.removeIf(coll -> coll.getKey().equals("Test"));
         theCollection.forEach(coll -> System.out.println(String.format("Key: %s | Value: %s", coll.getKey(), coll.getValue())));
+
+        System.out.println("Demonstration of method reference & chaining consumers");
+        List<String> theList = Arrays.asList("First", "Second", "Third", "Fourth");
+        List<String> newList = new ArrayList<>();
+        //forEach takes a Consumer, so let's create two with method references:
+        //Regular lambda:
+        Consumer<String> consumer1 = c -> System.out.println(c);
+        //Method reference:
+        Consumer<String> consumer1methodref = System.out::println;
+
+        //Regular lambda:
+        Consumer<String> consumer2 = c -> newList.add(c);
+        //Method reference:
+        Consumer<String> consumer2methodref = newList::add;
+        theList.forEach(consumer1methodref.andThen(consumer2methodref));
+        newList.forEach(System.out::println);
     }
 }
